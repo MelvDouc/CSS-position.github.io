@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<title>Position</title>
+</head>
+
+<body>
+	<h1>Position</h1>
+
+	<div class="parent">
+		Parent
+		<div class="div1">One</div>
+		<div class="div2">Two</div>
+		<div class="div3">Three</div>
+	</div>
+
+	<div class="parent">
+		Parent
+		<div class="div1" style="position: relative; left: 20px">One - position: relative; left: 20px</div>
+		<div class="div2" style="position: relative; top: 25px">Two - position: relative; top: 25px</div>
+		<div class="div3">Three</div>
+	</div>
+
+	<div class="parent">
+		Parent
+		<div class="div1" style="position: absolute">One - position: absolute <small>("Two" is hidden under "One".)</small></div>
+		<div class="div2">Two</div>
+		<div class="div3" style="position: absolute; right: 0">Three - position: absolute; right: 0</div>
+	</div>
+
+	<div class="parent" style="position: relative">
+		Parent - position: relative
+		<div class="div1">One</div>
+		<div class="div2" style="position: absolute; top: 2px; right: 2px; width: 140px">Two</div>
+		<div class="div3">Three</div>
+		Two - position: absolute; top: 2px; right: 2px; width: 140px
+	</div>
+
+	<div class="parent" style="height: 150vh">
+		Parent
+		<div class="div1" style="position: sticky; top: 0; height: fit-content">One - position: sticky; top: 0 <small>(becomes fixed when its top border hits the top of the viewport)</small></div>
+		<div class="div2">Two</div>
+		<div class="div3">Three</div>
+	</div>
+
+	<div style="position: fixed; top: 50vh; right: 5px; border: 1px solid"><small>position: fixed; top: 50vh; right: 5px</small></div>
+
+</body>
+</html>
